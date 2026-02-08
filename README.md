@@ -12,7 +12,7 @@ A robust, console-based Educational Management System built with **C++** and **O
 ## 🏗️ System Architecture (UML Class Diagram)
 Designed using strict OOP principles, emphasizing Composition for robust memory management and Separation of Concerns.
 
-![System Architecture](UML_Diagram.jpg)
+![System Architecture](FinalDiagram.jpg)
 
 ## 🛠️ Future Improvements
 * **String Optimization:** Current implementation passes strings by value for simplicity. In a production environment, I would refactor this to use `const string&` to optimize memory usage and avoid unnecessary copying. I prioritized System Stability and Architecture over micro-optimizations for this version.
