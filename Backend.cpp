@@ -272,6 +272,8 @@ void Backend::Grade_Solution(double Grade, int assignmentId, std::string coursec
 						throw std::logic_error("Invalid Grade");
 					}
 					sol->Set_Grade(Grade);
+					sol->Set_commnet(comment);
+					
 
 					break;
 				}
@@ -323,7 +325,7 @@ std::pair < std::pair<int, std::pair<std::string, double>>, std::vector<std::str
 void Backend::Unregister_From_Course(std::string code) {
 	Student* stud = dynamic_cast<Student*>(current_user);
 	if (stud == nullptr) {
-		throw std::runtime_error("‘User is not found");
+		throw std::runtime_error("Â‘User is not found");
 	}
 	user_manager.Handle_User_Unregisteration(code, stud);
 
